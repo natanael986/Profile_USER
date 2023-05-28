@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #a7b7d5;/* Azul claro */
+    --secondary-color: #ebeff2;/* Branco */
+    --third-color: #000000;/* Preto */
+    --text-color: #03032A;/* Azul escuro */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Blinker', sans-serif;
+}
+
+body {
+    background-color: var(--third-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--third-color);
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 32px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info h1, h2, h3 {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.profile p {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+.info {
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    line-height: 28px;
+    color: var(--text-secondary-color);
+}
+
+.banner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 10px;
+    }
+
+}
